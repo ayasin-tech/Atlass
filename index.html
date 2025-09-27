@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-ag" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit Plan Viewer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Babel Standalone to compile TSX in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="importmap">
 {
   "imports": {
@@ -17,10 +17,10 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <!-- Change type to "text/babel" and use a relative path for the script -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
